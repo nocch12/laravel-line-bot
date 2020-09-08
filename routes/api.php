@@ -14,7 +14,5 @@ use Illuminate\Http\Request;
 */
 
 Route::group(['namespace' => 'Api'], function () {
-    echo "test";
-    return;
     Route::post('/line/callback', 'LineBotController@callback')->name('line.callback');
 });
